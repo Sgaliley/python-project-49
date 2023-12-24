@@ -10,3 +10,7 @@
 ### Демонстрация Brain-Calc
 
 Посмотрите [аскинему](<https://asciinema.org/a/sDgwjWat3KwHRtG9hV74wZwtK>) запуск и игровой процесс.
+
+### Демонстрация Brain-Gcd
+
+Посмотрите [аскинему](<https://asciinema.org/a/sDgwjWat3KwHRtG9hV74wZwtK>) запуск и игровой процесс.
