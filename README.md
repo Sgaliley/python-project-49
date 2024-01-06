@@ -5,16 +5,20 @@
 
 ### Демонстрация Brain-even
 
-Посмотрите [аскинему](<https://asciinema.org/a/sDgwjWat3KwHRtG9hV74wZwtK>) запуск и игровой процесс.
+Посмотрите [аскинему](<https://asciinema.org/a/mtz0Zvfw1gZZs42pcjvkVZqDX>) запуск и игровой процесс.
 
 ### Демонстрация Brain-calc
 
-Посмотрите [аскинему](<https://asciinema.org/a/sDgwjWat3KwHRtG9hV74wZwtK>) запуск и игровой процесс.
+Посмотрите [аскинему](<https://asciinema.org/a/vWbmQlXDotR4ONf4kkmdmZ1x1>) запуск и игровой процесс.
 
 ### Демонстрация Brain-gcd
 
-Посмотрите [аскинему](<https://asciinema.org/a/sDgwjWat3KwHRtG9hV74wZwtK>) запуск и игровой процесс.
+Посмотрите [аскинему](<https://asciinema.org/a/yDfhF8In06y1AnmydJyvFZzVA>) запуск и игровой процесс.
 
 ### Демонстрация Brain-progression
 
-Посмотрите [аскинему](<https://asciinema.org/a/sDgwjWat3KwHRtG9hV74wZwtK>) запуск и игровой процесс.
+Посмотрите [аскинему](<https://asciinema.org/a/uqwTkBgLXmmIRxfsGksb9MnA8>) запуск и игровой процесс.
+
+### Демонстрация Brain-prime
+
+Посмотрите [аскинему](<https://asciinema.org/a/Bci8VT8Qasptl7qb9GMMDDhLi>) запуск и игровой процесс.
