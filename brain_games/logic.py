@@ -37,6 +37,7 @@ def is_prime(n):
 
 
 def brain_even():
+    '''Проверка на чётность'''
     name = welcome_user()
     for _ in range(3):
         print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -49,6 +50,7 @@ def brain_even():
 
 
 def brain_calc():
+    '''Калькулятор'''
     name = welcome_user()
     for _ in range(3):
         print('What is the result of the expression?')
@@ -64,9 +66,10 @@ def brain_calc():
 
 
 def brain_gcd():
+    '''Наибольший общий делитель (НОД)'''
     name = welcome_user()
     for _ in range(3):
-        print('What number is missing in the progression?')
+        print('Find the greatest common divisor of given numbers.')
         num1 = num_random(1, 20)
         num2 = num_random(1, 20)
         game_answer = math.gcd(num1, num2)
@@ -77,9 +80,10 @@ def brain_gcd():
 
 
 def brain_progression():
+    '''Арифметическая прогрессия'''
     name = welcome_user()
     for _ in range(3):
-        print('What is the result of the expression?')
+        print('What number is missing in the progression?')
         num1 = num_random(1, 10)
         step = num_random(1, 10)
         length = num_random(5, 10)
@@ -94,6 +98,7 @@ def brain_progression():
 
 
 def brain_prime():
+    '''Простое ли число?'''
     name = welcome_user()
     for _ in range(3):
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
