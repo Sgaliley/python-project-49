@@ -12,7 +12,8 @@ def check_answer(game_answer, user_answer, name):
     if game_answer == user_answer:
         print('Correct!')
     else:
-        print(f'"{user_answer}" is wrong answer ;(. Correct answer was "{game_answer}".')
+        print(f'"{user_answer}" is wrong answer ;(. '
+              f'Correct answer was "{game_answer}".')
         print(f'Let\'s try again, {name}!')
         quit()
 
@@ -51,11 +52,11 @@ def brain_calc():
     name = welcome_user()
     for _ in range(3):
         print('What is the result of the expression?')
-        ops = {'+':operator.add, '-':operator.sub, '*':operator.mul}
+        ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
         num1 = num_random(1, 20)
         num2 = num_random(1, 20)
         op = random.choice(list(ops.keys()))
-        game_answer = ops.get(op)(num1,num2)
+        game_answer = ops.get(op)(num1, num2)
         print(f'Question: {num1} {op} {num2}')
         user_answer = int(answer_string())
         check_answer(game_answer, user_answer, name)
@@ -83,7 +84,7 @@ def brain_progression():
         step = num_random(1, 10)
         length = num_random(5, 10)
         lst = [str(num1 + i * step) for i in range(length)]
-        num = random.randint(0, len(lst)-1)
+        num = random.randint(0, len(lst) - 1)
         game_answer = lst[num]
         lst[num] = '..'
         print(f'Question: {" ".join(lst)}')
