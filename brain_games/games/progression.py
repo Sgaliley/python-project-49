@@ -1,5 +1,6 @@
 from random import randint
 
+
 def game():
     '''Прогрессия. Поиск пропущенных чисел в последовательности чисел'''
     print('What number is missing in the progression?')
