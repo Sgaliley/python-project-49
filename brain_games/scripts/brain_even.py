@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.logic import brain_even
+from brain_games.games.even import game
+from brain_games.engine import play_game
 
 
 def main():
-    brain_even()
+    '''Запуск even'''
+    play_game(game)
 
 
 if __name__ == '__main__':

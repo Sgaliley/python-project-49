@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.logic import brain_prime
+from brain_games.games.prime import game
+from brain_games.engine import play_game
 
 
 def main():
-    brain_prime()
+    '''Запуск prime'''
+    play_game(game)
 
 
 if __name__ == '__main__':
