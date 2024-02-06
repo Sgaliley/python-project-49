@@ -1,20 +1,23 @@
-from random import randint
-import math
+import random
+from brain_games.engine import play_game
+from brain_games.consts import PRIME_INSTRUCTION, MIN_NUM, MAX_NUM
 
 
 def is_prime(num):
     if num < 2:
-        return 'no'
-    for i in range(2, int(math.sqrt(num)) + 1):
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
 
 
-def game():
+def get_num_and_prime_ans():
     '''Определение простого числа'''
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    num = randint(1, 100)
-    print(f'Question: {num}')
-    game_answer = is_prime(num)
-    return game_answer
+    num = random.randint(MIN_NUM, MAX_NUM)
+    game_answer = 'yes' if is_prime(num) else 'no'
+    return num, game_answer
+
+
+def run_prime_game():
+    play_game(get_num_and_prime_ans, PRIME_INSTRUCTION)

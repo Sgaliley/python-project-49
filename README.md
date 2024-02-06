@@ -43,11 +43,11 @@ Python 3.11.0+
 ```
 обновить
 ```
-sudo apt-get update && sudo apt-get upgrade python3.X
+>> sudo apt-get update && sudo apt-get upgrade python3.X
 ```
 установить
 ```
-sudo apt update && sudo apt-get install python3.X
+>> sudo apt update && sudo apt-get install python3.X
 ```
 Установить PIP и Poetry и make
 

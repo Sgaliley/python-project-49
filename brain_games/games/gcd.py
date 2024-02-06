@@ -1,12 +1,17 @@
-from random import randint
+import random
 import math
+from brain_games.engine import play_game
+from brain_games.consts import GCD_INSTRUCTION, MIN_NUM, MAX_NUM
 
 
-def game():
+def get_nums_pair_and_gcd():
     '''Определение наибольшего общего делителя(НОД)'''
-    print('Find the greatest common divisor of given numbers.')
-    num1 = randint(1, 20)
-    num2 = randint(1, 20)
+    num1 = random.randint(MIN_NUM, MAX_NUM)
+    num2 = random.randint(MIN_NUM, MAX_NUM)
     game_answer = str(math.gcd(num1, num2))
-    print(f'Question: {num1} {num2}')
-    return game_answer
+    num = f'{num1} {num2}'
+    return num, game_answer
+
+
+def run_gcd_game():
+    play_game(get_nums_pair_and_gcd, GCD_INSTRUCTION)

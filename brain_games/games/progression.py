@@ -1,15 +1,26 @@
-from random import randint
+import random
+from brain_games.engine import play_game
+from brain_games.consts import (
+    MIN_PROGRESSION_LENGTH,
+    MAX_PROGRESSION_LENGTH,
+    PROGRESSION_INSTRUCTION,
+    MIN_NUM,
+    MAX_NUM,
+)
 
 
-def game():
+def get_progression_and_miss_num():
     '''Прогрессия. Поиск пропущенных чисел в последовательности чисел'''
-    print('What number is missing in the progression?')
-    num = randint(1, 10)
-    step = randint(1, 10)
-    length = randint(5, 10)
+    num = random.randint(MIN_NUM, MAX_NUM)
+    step = random.randint(MIN_NUM, MAX_NUM)
+    length = random.randint(MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
     lst = [str(num + i * step) for i in range(length)]
-    rand_num = randint(0, len(lst) - 1)
+    rand_num = random.randint(0, length - 1)
     game_answer = lst[rand_num]
     lst[rand_num] = '..'
-    print(f'Question: {" ".join(lst)}')
-    return game_answer
+    prog_with_missed_num = " ".join(lst)
+    return prog_with_missed_num, game_answer
+
+
+def run_progression_game():
+    play_game(get_progression_and_miss_num, PROGRESSION_INSTRUCTION)
