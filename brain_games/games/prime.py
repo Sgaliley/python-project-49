@@ -1,6 +1,5 @@
 import random
-from brain_games.engine import play_game
-from brain_games.consts import PRIME_INSTRUCTION, MIN_NUM, MAX_NUM
+from brain_games.consts import MIN_NUM, MAX_NUM
 
 
 def is_prime(num):
@@ -17,7 +16,3 @@ def get_num_and_prime_ans():
     num = random.randint(MIN_NUM, MAX_NUM)
     game_answer = 'yes' if is_prime(num) else 'no'
     return num, game_answer
-
-
-def run_prime_game():
-    play_game(get_num_and_prime_ans, PRIME_INSTRUCTION)
